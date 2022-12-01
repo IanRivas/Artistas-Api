@@ -1,0 +1,30 @@
+POST http://localhost:3001/api/artistas/agregar
+Content-Type: application/json
+
+{
+    "nombre": "Muse",
+    "seguidores": 1000000,
+    "genero": "Rock",
+    "imagen": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Muse_-_Live_at_the_O2_Arena%2C_London_-_2015-09-26_-_DSC_0001_%28cropped%29.jpg/220px-Muse_-_Live_at_the_O2_Arena%2C_London_-_2015-09-26_-_DSC_0001_%28cropped%29.jpg"
+}
+
+### Get Artistas
+GET http://localhost:3001/api/artistas/ver
+
+### Get Artista
+GET http://localhost:3001/api/artistas/ver/6334587c9b8c047061c52e96
+
+### Update Artista
+
+PUT http://localhost:3001/api/artistas/editar?id=63868eddc11c5255603de5b6
+Content-Type: application/json
+
+{
+    "nombre": "Nirvana",
+    "seguidores": 3333333,
+    "genero": "Rock",
+    "imagen": "https://uplo26_-_DSC_0001_%28cropped%29.jpg"
+}
+
+### Delete Artista
+DELETE http://localhost:3001/api/artistas/eliminar?id=6386917b4fcbf98584644f2d
